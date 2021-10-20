@@ -5,6 +5,7 @@
 #include <esp_log.h>
 #include <esp_sleep.h>
 #include <esp32/ulp.h>
+#include <ulp_main.h>
 
 extern "C"
 {
@@ -48,6 +49,7 @@ void app_main()
       ESP_LOGI("main", "****** ULP - GPIO_NUM_39");
     }
   }
+
   // wait for 5 seconds
   vTaskDelay(pdMS_TO_TICKS(250));
   ESP_LOGI("main", "Going to sleep...3");
